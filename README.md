@@ -1,5 +1,8 @@
 # DBA Challenge 20240802
 
+execicios em consultas.sql
+
+
 
 ## Introdução
 
