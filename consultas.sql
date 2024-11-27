@@ -18,7 +18,7 @@ where s.quantity = 0 or s.quantity is null
 //exercicio 4
 select store_id,count(o.order_id) from stores s full outer join 
 orders o on(s.store_id=o.store_id) 
-group by (o.order_id,store_id)
+group by (o.order_id,s.store_id)
 
 //exercicio 5
 select * from staffs s left join 
