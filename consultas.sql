@@ -16,7 +16,11 @@ stocks s on(p.product_id=s.product_id)
 where s.quantity = 0 or s.quantity is null
 
 //exercicio 4
-select * from
+select store_id,count(o.order_id) from stores s full outer join 
+orders o on(s.store_id=o.store_id) 
+group by (o.order_id,store_id)
 
 //exercicio 5
-select * from
+select * from staffs s left join 
+orders o on(s.staff_id=o.staff_id) 
+where o.order_id is null
